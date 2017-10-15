@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>What Can JavaScript Do?</h2>
+<p id="demo">JavaScript can change HTML content.</p>
+<br/>
+<button type="button" style="width:100px" onclick='imgchange()'>Function execution</button>
+<img src="green.jpg" id="pic" style="width:200px">
+<br/>
+<script>
+    document.write("i am loving javascript")
+    console.log("hello");
+  //  window.alert("testing alert");
+</script>
+<script src="javas.js"></script>
+
+First name: <input type="text" name="FirstName2" id='fname2' value ="werewr2" ><br>
+    First name: <input type="text" name="FirstName" id='fname' value ="werewr" ><br>
+    <button type="button" onclick='calcfunc()' style="width:200px">Submit</button>
+
+<script>
+    function calcfunc()
+    {
+      document.write(document.getElementById('fname2').value);
+      document.write(document.getElementById('fname').value);
+      return null;
+    }
+</script>
+
+//understanding switch
+<script>
+switch (new Date().getDay()) {
+    case 2:
+    case 9:
+    case 5:
+        day = "Sunday";
+
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case 0:
+        day = "Saturday";
+}
+document.write("Switch Execution : Today is" + day);
+</script>
+
+<br/>
+<br/>
+</body>
+</html>
